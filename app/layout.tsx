@@ -1,56 +1,29 @@
-import "./globals.css"
-import type { Metadata } from "next"
-import { Klee_One } from "next/font/google"
-import { Button } from "@/components/ui/button"
+import "./globals.css";
+import type { Metadata } from "next";
+import { Klee_One } from "next/font/google";
+import TopBar from "@/components/ui/TopBar";
 
 const kleeOne = Klee_One({
   weight: ["400", "600"],
   subsets: ["latin"],
   variable: "--font-klee-one",
-})
+});
 
 export const metadata: Metadata = {
   title: "Japanese Ryokan Experience",
   description: "Discover the tranquility and beauty of traditional Japanese inns",
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className={kleeOne.variable}>
       <body className="font-klee min-h-screen flex flex-col">
         <header className="bg-white shadow-sm">
-          <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div className="text-2xl font-semibold">和 Ryokan</div>
-            <ul className="flex items-center space-x-6">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Rooms
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Amenities
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <Button size="sm">Book Now</Button>
-              </li>
-            </ul>
-          </nav>
+          <TopBar />
         </header>
         <main className="flex-grow">{children}</main>
         <footer className="bg-gray-100 py-12">
@@ -99,6 +72,5 @@ export default function RootLayout({
         </footer>
       </body>
     </html>
-  )
+  );
 }
-

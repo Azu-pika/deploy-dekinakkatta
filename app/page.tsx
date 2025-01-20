@@ -1,8 +1,18 @@
+"use client"
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { useRouter } from "next/navigation" // Correct import for App Router
+
 
 export default function Home() {
+  const router = useRouter(); // Initialize the router
+
+  const handleNavigation = () => {
+    router.push("/book_new_stay"); // Navigate to the desired route
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -18,7 +28,7 @@ export default function Home() {
         <div className="relative z-10 text-center text-white">
           <h1 className="text-5xl font-klee font-semibold mb-4">Experience Tranquility</h1>
           <p className="text-xl font-klee mb-8">Discover the beauty of Japanese Ryokan</p>
-          <Button size="lg" className="font-klee">
+          <Button size="lg" className="font-klee" onClick={handleNavigation}>
             Book Your Stay
           </Button>
         </div>
