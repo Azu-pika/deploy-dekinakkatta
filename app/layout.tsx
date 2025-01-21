@@ -1,12 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Klee_One } from "next/font/google";
+import { Roboto } from "next/font/google";
 import TopBar from "@/components/ui/TopBar";
 
-const kleeOne = Klee_One({
-  weight: ["400", "600"],
+const roboto = Roboto({
+  weight: ["400", "500", "700"],
   subsets: ["latin"],
-  variable: "--font-klee-one",
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={kleeOne.variable}>
-      <body className="font-klee min-h-screen flex flex-col">
+    <html lang="en" className={roboto.variable}>
+      <body className="font-roboto min-h-screen flex flex-col">
         <header className="bg-white shadow-sm">
           <TopBar />
         </header>
