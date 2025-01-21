@@ -36,12 +36,17 @@ const TopBar = () => {
         </li>
         <li>
           <a href="#" className="text-gray-600 hover:text-gray-900">
-            Amenities
+            Recreation
           </a>
         </li>
         <li>
           <a href="#" className="text-gray-600 hover:text-gray-900">
-            Contact
+            Restrant
+          </a>
+        </li>
+        <li>
+          <a href="#" className="text-gray-600 hover:text-gray-900">
+            Offer
           </a>
         </li>
         <li>
