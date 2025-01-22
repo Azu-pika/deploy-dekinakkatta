@@ -2,6 +2,12 @@
 
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import { Klee_One } from "next/font/google";
+
+const kleeOne = Klee_One({
+  weight: "400", // Choose the weight you prefer
+  subsets: ["latin"],
+});
 
 const TopBar = () => {
   const router = useRouter();
@@ -24,7 +30,6 @@ const TopBar = () => {
             <a href="#" className="text-gray-600 hover:text-gray-900">
               Languages
             </a>
-           
           </div>
         </div>
       </div>
@@ -40,7 +45,8 @@ const TopBar = () => {
             alt="Logo"
             className="w-8 h-8 mr-2"
           />
-          和 旅館
+          {/* Apply the KleeOne font to this part */}
+          <span className={kleeOne.className}>和旅館</span>
         </div>
         <ul className="flex items-center space-x-6">
           <li>
