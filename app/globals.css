@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    --font-lora: "Lora", serif; /* Add Lora as a global variable */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -55,17 +56,16 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-lora), serif; /* Apply Lora font globally */
   }
 }
 
 @layer utilities {
   .bg-background {
-      background-color: #f0f0f0; /* Replace with your desired color */
+    background-color: #f0f0f0; /* Replace with your desired color */
   }
 }
 
-
 .font-roboto {
-  font-family: var(--font-roboto), sans-serif;
+  font-family: var(--font-lora), serif; /* Update roboto class to use Lora */
 }
-
