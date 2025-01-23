@@ -83,7 +83,12 @@ const TopBar = () => {
             </a>
           </li>
           <li>
-            <Button size="sm">Book Now</Button>
+            <Button
+              size="sm"
+              className="bg-[#45291B] text-white hover:bg-[#4B3324] hover:text-white"
+            >
+              Book Now
+            </Button>
           </li>
         </ul>
       </nav>

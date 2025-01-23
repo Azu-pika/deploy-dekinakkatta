@@ -61,13 +61,13 @@ export default function RootLayout({
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <p className="text-gray-600">123 Sakura Street, Kyoto, Japan</p>
+              <p className="text-gray-600">12345 Sakura Street, Kyouuuuto, Japan</p>
               <p className="text-gray-600">Phone: +81 123-456-7890</p>
-              <p className="text-gray-600">Email: info@ryokan.com</p>
+              <p className="text-gray-600">Email: iinnffoo@ryokan.coom</p>
             </div>
           </div>
           <div className="mt-8 text-center text-gray-600">
-            <p>&copy; 2023 Japanese Ryokan Experience. All rights reserved.</p>
+            <p>&copy; 2050 Japanese Ryokan Experience. All rights reserved.</p>
           </div>
         </footer>
       </body>
